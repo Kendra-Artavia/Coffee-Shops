@@ -248,6 +248,29 @@ btn:hover{
     grid-column: span 2;
 
 }
-/*--- ---*/
+/*---Gallery---*/
+.gallery{
+    background-image: url(../images/bg-img2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(40rem , 1fr));
+    align-content: center;
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+    transition-duration: 0.5s;
+}
+.gallery img:hover{
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.1);
+    z-index: 100;
+}
 /*--- ---*/
 /*--- ---*/
