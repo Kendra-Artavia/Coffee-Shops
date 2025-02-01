@@ -148,3 +148,49 @@ btn:hover{
 .welcome-btn{
     margin-bottom: -8rem;
 }
+
+/*---Best Sellers---*/
+
+.best-sellers{
+    background-image: url(../images/bg-img1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 2rem 0;
+    gap: 12rem;
+}
+
+
+.best-sellers-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(40rem , 1fr));
+    align-content: center;
+    gap: 2rem;
+
+}
+.best-sellers-item{
+   background-color: var(--hover-color);
+   padding: 3rem 2rem;
+   border-radius: 1rem;
+   text-align: center;
+
+}
+
+.best-sellers-item img{
+    width: 70%;
+    border-radius: 1rem;
+}
+
+.best-sellers-item h3{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+
+}
+
+.best-sellers-item p{
+    margin: 2rem 0;
+}
+.best-sellers-item .btn{
+    padding: 1rem 2rem;
+}
