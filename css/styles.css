@@ -74,7 +74,6 @@ btn:hover{
     height: 100%;
     object-fit: cover;
     z-index: -1;
-
 }
 
 /*---Header---*/
@@ -160,8 +159,8 @@ btn:hover{
 }
 
 .welcome-content h2 span:last-child{
-    font-size: 4.5rem;
     font-weight: 100;
+    font-size: 4.5rem;
     margin-bottom: 2rem;
 }
 
@@ -182,8 +181,7 @@ btn:hover{
     background-position: center;
     background-size: cover;
     width: 100%;
-    padding: 2rem 0;
-    gap: 12rem;
+    padding: 3rem 0;
 }
 
 
@@ -195,7 +193,7 @@ btn:hover{
 
 }
 
-@media(max-width: 576){
+@media(max-width: 576px){
     .best-sellers-content{
         grid-template-columns: 1fr;
     }
