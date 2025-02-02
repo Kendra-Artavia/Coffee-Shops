@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -15,19 +15,27 @@
     --font-oleo: "Oleo Script", serif;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-size: 1.6rem;
     font-family: var(--font-sans);
-
 }
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1.4rem;
+    
+    }
+}
+
 
 /*---Utilities---*/
 
 .container{
+    width: 100%;
     max-width: 100rem;
     padding: 1rem;
     margin: 0 auto;
@@ -35,15 +43,13 @@ body{
 
 .btn {
     display: inline-block;
-    padding: 2rem;
+    padding: 2rem 3rem;
     background-color: var(--second-bg-color);
     border-radius: 1rem;
     font-weight: 600;
     color: var(--bg-color);
     font-size: 1.8rem;
     transition-duration: 0.3;
-
-
 }
 
 btn:hover{
@@ -75,12 +81,16 @@ btn:hover{
 
 .header{
     position: relative;
-    max-width: 100%;
     height: 100vh;
     text-align: center;
     overflow: hidden;
 }
-
+@media(max-width: 992px){
+    .header{
+        height: 100%;
+        padding-bottom: 5rem;
+    }
+}
 .header-logo{
     margin: 3rem 0;
 }
@@ -102,6 +112,21 @@ btn:hover{
     gap:2rem;
     background-color: var(--bg-color);
     padding: 3rem 0;
+}
+
+@media(max-width: 575px){
+    .navbar{
+        padding: 3rem 0;
+    }
+    .navbar a{
+        font-size: 1.3rem;
+    }
+    .header-logo h1{
+        font-size: 2rem;
+    }
+    .header-logo h2{
+        font-size: 2rem;
+    }
 }
 
 .navbar a{
@@ -169,6 +194,12 @@ btn:hover{
     gap: 2rem;
 
 }
+
+@media(max-width: 576){
+    .best-sellers-content{
+        grid-template-columns: 1fr;
+    }
+}
 .best-sellers-item{
    background-color: var(--hover-color);
    padding: 3rem 2rem;
@@ -195,7 +226,7 @@ btn:hover{
     padding: 1rem 2rem;
 }
 
-/*------*/
+/*---New-Product---*/
 
 .new-product{
     padding: 6rem 0;
@@ -220,6 +251,17 @@ btn:hover{
     text-align: center;
 }
 
+@media (max-width: 992px) {
+    .product-info {
+        top: 65%;
+        right: auto;
+        left: 50%;
+        width: 95%;
+        transform: translateX(-50%);
+    }
+}
+
+
 .product-info .title2{
     margin-bottom: 2rem;
     font-size: 4rem;
@@ -235,6 +277,24 @@ btn:hover{
     background-color: var(--bg-color);
     color: var(--text-color);
 }
+
+@media (max-width: 578px) {
+    .product-info .title2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .product-info p {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .product-info .btn {
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+    }
+}
+
 /*---menu---*/
 .menu{
     padding: 4rem 0;
@@ -254,6 +314,13 @@ btn:hover{
     grid-template-columns: repeat(auto-fit ,minmax(40rem , 1fr));
 
 }
+
+@media (max-width: 578px) {
+    .menu-content2 {
+        grid-template-columns: 1fr;
+    }
+}
+
 .menu-content2 article{
     padding: 2rem;
 }
@@ -378,6 +445,43 @@ btn:hover{
     gap :2rem;
 
 }
+@media (max-width: 992px) {
+    .footer-content {
+        grid-template-areas:
+            "footer-logo footer-logo footer-logo footer-about footer-about"
+            "social-media social-media social-media footer-about footer-about"
+            ". . . footer-other footer-other"
+            ". . . footer-other footer-other"
+            "footer-text footer-text footer-text footer-text footer-text";
+    }
+}
+
+@media (max-width: 676px){
+    .footer-content {
+        grid-template-areas:
+            "footer-logo footer-logo"
+            "social-media social-media"
+            "footer-about footer-other"
+            "footer-about footer-other"
+            "footer-text footer-text";
+
+            place-content: center;
+    }
+}
+
+
+@media (max-width: 420px){
+    .footer-content {
+        grid-template-areas:
+            "footer-logo"
+            "social-media"
+            "footer-about"
+            "footer-other"
+            "footer-text";
+
+            place-content: center;
+    }
+}
 
 .footer-logo{
     place-self: center;
@@ -395,6 +499,15 @@ btn:hover{
     font-weight: 600;
 }
 
+@media (max-width: 578px){
+    .footer-logo h2{
+        font-size: 2rem;
+    }
+
+    .footer-logo .description{
+        font-size: 1.6rem;
+    }
+}
 .social-media{
     display: flex;
     align-items: center;
