@@ -24,7 +24,7 @@ This project replicates the appearance of a coffee shop website using HTML and C
 
 ## Preview
 
-![Preview gif] (images/Preview.gif)
+![Preview gif](images/Preview.gif)
 
 ## Goals
 
